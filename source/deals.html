@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deals | Campus Bites</title>
+  <meta name="description" content="Today's special and combo deals at Campus Bites, including the Student Combo and Lunch Combo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html" aria-label="Campus Bites home">Campus <span>Bites</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav"><span></span></button>
+      <nav aria-label="Main">
+        <ul class="nav-list" id="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="deals.html" aria-current="page">Deals</a></li>
+        <li><a href="order.html">How to Order</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="wrap">
+        <span class="eyebrow">Daily Specials &amp; Deals</span>
+        <h1>Eat well, spend less.</h1>
+        <p class="lead">A new special every day, and combos that bring the price of a full meal down.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="special reveal">
+          <div style="position:relative;z-index:1">
+            <span class="eyebrow" id="sp-day">Today's special</span>
+            <h2 id="sp-name">Chicken Biryani</h2>
+            <p id="sp-desc">Our Monday classic with raita and salad.</p>
+          </div>
+          <div class="special-price" id="sp-price"><span class="now">PKR 330</span><span class="was">PKR 380</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Combo deals</span>
+          <h2>Bundles worth ordering.</h2>
+          <p class="lead">Available every day during opening hours. Drinks can be swapped for chai at no extra cost.</p>
+        </div>
+        <div class="grid grid--4">
+          <article class="card combo reveal">
+            <span class="combo-tag">Most popular</span>
+            <h3>Student Combo</h3>
+            <ul><li>Chicken Roll Paratha</li><li>Loaded Fries</li><li>Fresh Lime Soda</li></ul>
+            <div class="combo-foot">
+              <div class="combo-price"><small>PKR</small> 599</div>
+              <span class="save">Save PKR 171</span>
+            </div>
+          </article>
+          <article class="card combo reveal">
+            <span class="combo-tag">Midday</span>
+            <h3>Lunch Combo</h3>
+            <ul><li>Chicken Biryani</li><li>Kheer</li><li>Fresh Lime Soda</li></ul>
+            <div class="combo-foot">
+              <div class="combo-price"><small>PKR</small> 549</div>
+              <span class="save">Save PKR 161</span>
+            </div>
+          </article>
+          <article class="card combo reveal">
+            <span class="combo-tag">Until 11:30 am</span>
+            <h3>Breakfast Combo</h3>
+            <ul><li>Paratha with Omelette</li><li>Doodh Patti Chai</li><li>Cornflakes with Milk</li></ul>
+            <div class="combo-foot">
+              <div class="combo-price"><small>PKR</small> 399</div>
+              <span class="save">Save PKR 161</span>
+            </div>
+          </article>
+          <article class="card combo reveal">
+            <span class="combo-tag">Serves four</span>
+            <h3>Group Combo</h3>
+            <ul><li>4 Zinger Burgers</li><li>2 Loaded Fries</li><li>4 Fresh Lime Sodas</li></ul>
+            <div class="combo-foot">
+              <div class="combo-price"><small>PKR</small> 2399</div>
+              <span class="save">Save PKR 601</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">This week</span>
+          <h2>The weekly special board.</h2>
+        </div>
+        <div class="table-wrap reveal">
+          <table>
+            <thead><tr><th>Day</th><th>Special</th><th>Price</th></tr></thead>
+            <tbody>
+              <tr data-day="1"><td>Monday</td><td>Chicken Biryani</td><td>PKR 330</td></tr>
+              <tr data-day="2"><td>Tuesday</td><td>Daal Chawal Plate</td><td>PKR 200</td></tr>
+              <tr data-day="3"><td>Wednesday</td><td>Zinger Burger with Fries</td><td>PKR 500</td></tr>
+              <tr data-day="4"><td>Thursday</td><td>Beef Pulao</td><td>PKR 350</td></tr>
+              <tr data-day="5"><td>Friday</td><td>Halwa Puri Plate</td><td>PKR 300</td></tr>
+              <tr data-day="6"><td>Saturday</td><td>Chicken Karahi with Naan</td><td>PKR 480</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="logo" href="index.html">Campus <span>Bites</span></a>
+          <p>Honest food, fair prices and a quiet corner between lectures.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="order.html">How to Order</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Visit</h3>
+          <p>Ground Floor, Block C<br>University of Central Punjab</p>
+          <p>Mon&ndash;Fri 8:00 am &ndash; 8:00 pm<br>Sat 9:00 am &ndash; 5:00 pm</p>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2026 Campus Bites. A fictional cafeteria created for the DevOps Fundamentals course.</div>
+    </div>
+  </footer>
+
+  <script>
+  (function () {
+    // Mobile navigation
+    var toggle = document.querySelector(".nav-toggle");
+    var nav = document.getElementById("nav");
+    toggle.addEventListener("click", function () {
+      var open = nav.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", open);
+    });
+    nav.addEventListener("click", function (e) {
+      if (e.target.tagName === "A") { nav.classList.remove("open"); toggle.setAttribute("aria-expanded", "false"); }
+    });
+
+    // Scroll reveal
+    var items = document.querySelectorAll(".reveal");
+    if ("IntersectionObserver" in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
+      }, { threshold: 0.12 });
+      items.forEach(function (el) { io.observe(el); });
+    } else {
+      items.forEach(function (el) { el.classList.add("in"); });
+    }
+
+    // Daily special by weekday
+    var SPECIALS = [
+      { day: "Sunday",    name: "We are closed today", desc: "Campus Bites reopens on Monday at 8:00 am.", price: null, was: null },
+      { day: "Monday",    name: "Chicken Biryani",      desc: "Our Monday classic with raita and salad.", price: 330, was: 380 },
+      { day: "Tuesday",   name: "Daal Chawal Plate",    desc: "Tadka daal, steamed rice, pickled onions and a papad.", price: 200, was: 250 },
+      { day: "Wednesday", name: "Zinger Burger with Fries", desc: "Mid-week treat with a side of crisp fries.", price: 500, was: 600 },
+      { day: "Thursday",  name: "Beef Pulao",           desc: "Slow-cooked pulao with kachumber salad.", price: 350, was: 420 },
+      { day: "Friday",    name: "Halwa Puri Plate",     desc: "The Friday breakfast favourite, served until 1:00 pm.", price: 300, was: 350 },
+      { day: "Saturday",  name: "Chicken Karahi with Naan", desc: "Half portion karahi with two fresh naan.", price: 480, was: 550 }
+    ];
+    var d = new Date().getDay(), s = SPECIALS[d];
+    document.getElementById("sp-day").textContent = s.day + "'s special";
+    document.getElementById("sp-name").textContent = s.name;
+    document.getElementById("sp-desc").textContent = s.desc;
+    var priceBox = document.getElementById("sp-price");
+    priceBox.innerHTML = s.price
+      ? '<span class="now">PKR ' + s.price + '</span><span class="was">PKR ' + s.was + '</span>'
+      : '<span class="now">Closed</span>';
+    document.querySelectorAll("[data-day]").forEach(function (row) {
+      row.classList.toggle("is-today", Number(row.dataset.day) === d);
+    });
+  })();
+  </script>
+</body>
+</html>
