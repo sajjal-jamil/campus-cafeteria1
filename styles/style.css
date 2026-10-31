@@ -467,6 +467,7 @@ tr.is-today td:first-child { box-shadow: inset 4px 0 0 var(--accent-dark); }
   gap: clamp(2rem, 5vw, 4rem);
   align-items: start;
 }
+
 /* ---------- Order steps ---------- */
 
 .steps { list-style: none; margin: 0; padding: 0; counter-reset: step; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
@@ -534,3 +535,70 @@ tr.is-today td:first-child { box-shadow: inset 4px 0 0 var(--accent-dark); }
 .faq summary::after { content: "+"; font-size: 1.4rem; line-height: 1; color: var(--accent); transition: transform 0.25s; }
 .faq details[open] summary::after { transform: rotate(45deg); }
 .faq details p { padding: 0 1.6rem 1.3rem; margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+.special {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2.5rem;
+  align-items: center;
+  background: var(--accent-dark);
+  color: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: clamp(2rem, 6vw, 4.5rem);
+  position: relative;
+  overflow: hidden;
+}
+.special::after {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 253, 249, 0.18);
+  box-shadow: 0 0 0 40px rgba(255, 253, 249, 0.04), 0 0 0 80px rgba(255, 253, 249, 0.03);
+  right: -100px;
+  bottom: -190px;
+}
+.special .eyebrow { color: var(--tan); }
+.special p { color: #dccdb5; margin-bottom: 0; }
+.special h2 { margin-bottom: 0.4rem; font-size: clamp(2.4rem, 6vw, 4.4rem); }
+.special-price { text-align: right; position: relative; z-index: 1; }
+.special-price .now { font-family: var(--font-head); font-size: clamp(3rem, 8vw, 5.5rem); line-height: 1; letter-spacing: 0.01em; }
+.special-price .was { display: block; margin-top: 0.4rem; color: #dccdb5; text-decoration: line-through; font-size: 0.95rem; }
+
+.combo { display: flex; flex-direction: column; border-radius: var(--radius-lg); padding: 2rem 1.8rem; }
+.combo h3 { margin-bottom: 0.2rem; font-size: 1.7rem; }
+.combo-tag { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem; }
+.combo ul { list-style: none; margin: 0.75rem 0 1.5rem; padding: 0; flex: 1; }
+.combo li {
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  position: relative;
+  font-size: 0.92rem;
+  color: var(--muted);
+  border-bottom: 1px dashed var(--line);
+}
+.combo li::before {
+  content: "";
+  position: absolute;
+  left: 0.2rem;
+  top: 1.05rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.combo-foot { display: flex; align-items: center; justify-content: space-between; gap: 0.8rem; flex-wrap: wrap; }
+.combo-price {
+  font-family: var(--font-head);
+  font-size: 1.9rem;
+  letter-spacing: 0.02em;
+  color: var(--accent-dark);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  padding: 0 1.1rem;
+  border-radius: 999px;
+  line-height: 1.6;
+}
+.combo-price small { font-family: var(--font-body); font-size: 0.7rem; color: var(--muted); }
+.save { font-size: 0.8rem; font-weight: 500; color: var(--ok); }
+
